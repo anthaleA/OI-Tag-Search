@@ -1,0 +1,43 @@
+{
+  "app": {
+    "host": "127.0.0.1",
+    "port": 5907,
+    "debug": true,
+    "base_path": "/pa"
+  },
+  "data_file": "data/problems.json",
+  "data_source": {
+    "type": "sqlite",
+    "db_path": "C:\\\\path"
+  },
+  "search": {
+    "default_match_mode": "all",
+    "case_sensitive": false,
+    "default_limit": 50,
+    "max_limit": 200
+  },
+  "crawler": {
+    "output_file": "data/problems.json",
+    "merge_strategy": "upsert_by_id",
+    "request": {
+      "timeout_seconds": 12,
+      "user_agent": "PA-MVP/1.0 (+local)"
+    },
+    "sources": [
+      {
+        "name": "sample_local",
+        "type": "json_file",
+        "path": "data/sample_source.json"
+      },
+      {
+        "name": "sqlite_pa",
+        "type": "sqlite_pa",
+        "path": "C:\\\\Path",
+        "tables": {
+          "problems": "problems",
+          "tags": "tags"
+        }
+      }
+    ]
+  }
+}

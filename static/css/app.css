@@ -1,0 +1,290 @@
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --ink: #0d0d0d;
+  --muted: #4d4d4d;
+  --accent: #0d0d0d;
+  --accent-2: #0d0d0d;
+  --panel: #ffffff;
+  --shadow: none;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "IBM Plex Sans", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bg-orb {
+  display: none;
+}
+
+.orb-1 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #f4c8a3, transparent 70%);
+  top: -120px;
+  right: -60px;
+  animation: float 10s ease-in-out infinite;
+}
+
+.orb-2 {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, #9ad0f5, transparent 70%);
+  bottom: -220px;
+  left: -120px;
+  animation: float 12s ease-in-out infinite;
+}
+
+.bg-grid {
+  display: none;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  padding: 56px 6vw 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 36px;
+  animation: rise 0.4s ease-out;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(16px, 2.3vw, 20px);
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1px solid #e6e6e6;
+  display: grid;
+  gap: 24px;
+  animation: rise 0.4s ease-out 0.1s both;
+}
+
+.controls {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.field input,
+.field select {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  font-size: 15px;
+  background: #ffffff;
+  color: var(--ink);
+  outline: none;
+}
+
+.field-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.field.inline {
+  min-width: 160px;
+  flex: 1 1 160px;
+}
+
+.primary {
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid #0d0d0d;
+  background: #0d0d0d;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid #d9d9d9;
+  color: var(--muted);
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.tag-cloud {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #eeeeee;
+  display: grid;
+  gap: 12px;
+}
+
+.tag-cloud-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  color: #111111;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.tag-chip:hover {
+  transform: translateY(-1px);
+}
+
+.results {
+  margin-top: 28px;
+  display: grid;
+  gap: 16px;
+  animation: rise 0.4s ease-out 0.2s both;
+}
+
+.footer {
+  margin-top: 32px;
+  padding: 16px 0 8px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.results-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.results-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.result-card {
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 18px;
+  border: 1px solid #e6e6e6;
+  display: grid;
+  gap: 8px;
+}
+
+.result-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.result-card a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.result-tag {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  font-size: 12px;
+  color: #111111;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding: 40px 5vw 60px;
+  }
+
+  .field-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .results-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}

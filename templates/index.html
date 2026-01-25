@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>标签检索</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}?v={{ ui_config.cache_buster }}" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <main class="page">
+    <header class="hero">
+      <h1>题目检索系统</h1>
+      <p class="subtitle">~ 标签筛选界的史诗级加强。</p>
+    </header>
+
+    <section class="panel">
+      <div class="controls">
+        <label class="field">
+          <span>标签（逗号或 ; 分隔）</span>
+          <input id="tags-input" type="text" placeholder="动态规划、图论、贪心" />
+        </label>
+        <label class="field">
+          <span>关键词（题目名或编号）</span>
+          <input id="query-input" type="text" placeholder="A+B, CF-4A" />
+        </label>
+        <div class="field-row">
+          <label class="field inline">
+            <span>匹配方式</span>
+            <select id="mode-select">
+              <option value="all">全部标签</option>
+              <option value="any">任一标签</option>
+            </select>
+          </label>
+          <label class="field inline">
+            <span>结果数</span>
+            <input id="limit-input" type="number" min="1" max="200" value="50" />
+          </label>
+          <button id="search-btn" class="primary">搜索</button>
+        </div>
+      </div>
+
+      <div class="tag-cloud">
+        <div class="tag-cloud-head">
+          <h2>热门标签</h2>
+          <button id="refresh-tags" class="ghost">刷新</button>
+        </div>
+        <div id="tags-list" class="tag-list"></div>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="results-head">
+        <h2>检索结果</h2>
+        <div id="result-meta" class="meta">就绪。</div>
+      </div>
+      <div id="results-grid" class="results-grid"></div>
+    </section>
+
+    <footer class="footer">
+      <span>Made by wuu with ❤️</span>
+    </footer>
+  </main>
+
+  <script>
+    window.PA_CONFIG = {{ ui_config | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='js/app.js') }}?v={{ ui_config.cache_buster }}"></script>
+</body>
+</html>
