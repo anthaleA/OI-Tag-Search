@@ -25,4 +25,5 @@ python app.py
 ```
 
 3. 访问：
-- http://127.0.0.1:5907/（或配置的 `app.base_path`）
+- http://127.0.0.1:5907/
+- （或配置的 `app.base_path`）
